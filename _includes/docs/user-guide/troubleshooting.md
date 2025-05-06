@@ -58,7 +58,7 @@ After this you can find the following messages in your [logs](#logs):
 
 **Note:** This can be used only if Redis or Valkey is selected as a cache.
 
-It is possible that the data inside the cache has become corrupted. Regardless of the reason, it is always safe to clear the cache—ThingsBoard will simply refill it at runtime. To clear the cache, you need to log into the server/container/pod where it is deployed, open the application command-line tool (<code>redis-cli</code> for Redis and <code>valkey-cli</code> for Valkey), and run the <code>FLUSHALL</code>command. To clear the cache in Redis Sentinel mode or Valkey Sentinel mode, access the master container and execute the cache-clearing command.
+It is possible that the data inside the cache has become corrupted. Regardless of the reason, it is always safe to clear the cache — ThingsBoard will simply refill it at runtime. To clear the cache, you need to log into the server/container/pod where it is deployed, open the application command-line tool (<code>redis-cli</code> for Redis and <code>valkey-cli</code> for Valkey), and run the <code>FLUSHALL</code>command. To clear the cache in Sentinel mode, access the master container and execute the cache-clearing command.
 
 So if you are struggling with identifying the reason of some problem, you can safely clear cache to make sure it isn't the reason of the issue.
 
