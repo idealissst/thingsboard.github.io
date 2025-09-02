@@ -3,6 +3,7 @@ layout: docwithnav
 title: Get ThingsBoard Professional Edition
 description: ThingsBoard Professional Edition Installation
 hidetoc: "true"
+redirect_to: "/pricing/"
 
 ---
 

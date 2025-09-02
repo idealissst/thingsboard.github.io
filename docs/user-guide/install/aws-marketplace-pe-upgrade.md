@@ -2,6 +2,7 @@
 layout: docwithnav
 title: Upgrading ThingsBoard PE from AWS Marketplace
 description: Upgrading ThingsBoard PE from AWS Marketplace
+redirect_to: /docs/user-guide/install/pe/upgrade-instructions/
 
 ---
 
