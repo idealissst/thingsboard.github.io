@@ -104,6 +104,16 @@ There are several ways to check the platform version in ThingsBoard Community Ed
 The easiest way is to log in as SysAdmin. On the home page, you will find a widget in the bottom-left corner of the screen showing the current platform version and whether an upgrade is available.
 {% endif %}
 
+{% if page.docsPrefix contains "paas/" or docsPrefix contains "paas/" %}
+## What to do if I get "User with email 'youremail@example.com' is already registered!" when trying to register new account.
+The reason for this issue is that ThingsBoard Cloud uses a shared database for all users.
+Therefore, if you try to register with an email address that already exists in another tenant (for example, as a Customer user), you will see this error.
+
+To resolve this, you need to delete the user account associated with that email.
+You can do this by resetting the password and regaining access to the existing account. Then, click the three vertical dots in the top-right corner of the interface → Account → Delete user account, and follow the instructions.
+
+Once the user associated with that email is deleted, you will be able to register a new tenant using the same email address.
+{% endif %}
 
 ## Can I replace the default ThingsBoard logo in the menu?
 
