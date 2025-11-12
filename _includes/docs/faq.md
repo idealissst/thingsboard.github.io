@@ -106,7 +106,7 @@ The easiest way is to log in as SysAdmin. On the home page, you will find a widg
 
 {% if page.docsPrefix contains "paas/" or docsPrefix contains "paas/" %}
 ## What to do if I get "User with email 'youremail@example.com' is already registered!" when trying to register new account.
-The reason for this issue is that ThingsBoard Cloud uses a shared database for all users.
+This happens because all users in ThingsBoard Cloud share the same database.
 Therefore, if you try to register with an email address that already exists in another tenant (for example, as a Customer user), you will see this error.
 
 To resolve this, you need to delete the user account associated with that email.
